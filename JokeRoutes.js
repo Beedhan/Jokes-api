@@ -1,15 +1,18 @@
 const express = require("express");
 const router = express.Router();
-const { yomamma, dadjoke, programming, dark, doland } = require("./controllers/controller");
+const { yomamma, postJoke, dadjoke, programming, dark, doland, test } = require("./controllers/controller");
 
-router.get("/yomama", yomamma);
+router.route('/yomama').get(yomamma)
 
-router.get("/dadjoke", dadjoke);
+router.route('/dadjoke').get(dadjoke);
 
-router.get("/programming", programming);
+router.route('/programming').get(programming);
 
-router.get("/dark", dark);
+router.route('/dark').get(dark);
 
-router.get("/doland", doland);
+router.route('/doland').get(doland);
+
+router.route('/submit').post(postJoke);
+router.route('/test').get(test);
 
 module.exports = router;
