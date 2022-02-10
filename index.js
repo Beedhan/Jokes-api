@@ -8,9 +8,9 @@ const jokeRouters = require('./JokeRoutes');
 
 const PORT = process.env.PORT || 5000
 
-mongoose.connect(process.env.MONGO, { useNewUrlParser: true, useUnifiedTopology: true },()=>{
-    console.log("Database connected".rainbow)
-});
+//mongoose.connect(process.env.MONGO, { useNewUrlParser: true, useUnifiedTopology: true },()=>{
+//    console.log("Database connected".rainbow)
+//});
 
 app.use(express.json())
 app.use(cors())
