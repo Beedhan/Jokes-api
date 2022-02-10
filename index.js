@@ -8,7 +8,7 @@ const jokeRouters = require('./JokeRoutes');
 
 const PORT = process.env.PORT || 5000
 
-mongoose.connect('mongodb+srv://beedhan:lRazseCrQzfJED2O@cluster0.sapvi.mongodb.net/Joke_DB?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true },()=>{
+mongoose.connect(process.env.MONGO, { useNewUrlParser: true, useUnifiedTopology: true },()=>{
     console.log("Database connected".rainbow)
 });
 
