@@ -12,7 +12,7 @@ router.route('/dark').get(dark);
 
 router.route('/doland').get(doland);
 
-router.route('/submit').post(postJoke);
-router.route('/test').get(test);
+//router.route('/submit').post(postJoke);
+//router.route('/test').get(test);
 
 module.exports = router;
